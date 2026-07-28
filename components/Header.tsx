@@ -51,7 +51,7 @@ export default function Header() {
             <Logo wordmarkColor="#102A43" size={32} />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
+          <nav className="hidden md:flex items-center gap-1" aria-label="Primary">
             {navWithContact.map((item) => (
               <div key={item.label} className="relative group">
                 <Link
@@ -78,7 +78,7 @@ export default function Header() {
           </nav>
 
           <button
-            className="lg:hidden flex flex-col gap-1.5 p-2 -mr-2 shrink-0"
+            className="md:hidden flex flex-col gap-1.5 p-2 -mr-2 shrink-0"
             aria-label="Open menu"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen(true)}
