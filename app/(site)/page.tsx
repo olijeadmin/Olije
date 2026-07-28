@@ -175,7 +175,7 @@ export default async function HomePage() {
                   <Link
                     key={s.slug}
                     href={`/services/${s.slug}`}
-                    className="group relative overflow-hidden rounded-md p-9 min-h-[220px] flex flex-col justify-end"
+                    className="group relative overflow-hidden rounded-[28px] p-9 min-h-[220px] flex flex-col justify-end shadow-[0_24px_80px_rgba(16,42,67,0.12)]"
                   >
                     <Image
                       src={photo}
@@ -322,7 +322,7 @@ export default async function HomePage() {
         <div className="container-wrap">
           <Reveal>
             <div
-              className="relative rounded-sm overflow-hidden min-h-[440px] md:min-h-[480px] flex items-end"
+              className="relative rounded-[32px] overflow-hidden min-h-[440px] md:min-h-[480px] flex items-end shadow-[0_36px_90px_rgba(10,29,48,0.18)]"
             >
               {settings.sustainabilityFeature.image ? (
                 <Image
@@ -342,7 +342,7 @@ export default async function HomePage() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage:
-                    "linear-gradient(0deg, rgba(10,29,48,0.94) 10%, rgba(10,29,48,0.3) 65%, rgba(10,29,48,0.05) 100%)",
+                    "linear-gradient(0deg, rgba(10,29,48,0.94) 10%, rgba(10,29,48,0.4) 55%, rgba(10,29,48,0.14) 100%)",
                 }}
               />
               <div className="relative z-10 p-10 md:p-14 max-w-[640px]">
@@ -352,7 +352,7 @@ export default async function HomePage() {
                 <h2 className="font-serif text-ivory text-[1.9rem] md:text-[2.6rem]">
                   {settings.sustainabilityFeature.heading}
                 </h2>
-                <p className="text-ivory/72 text-[0.95rem] leading-[1.7] mt-4 max-w-[52ch]">
+                <p className="text-ivory text-[0.95rem] leading-[1.7] mt-4 max-w-[52ch]">
                   {settings.sustainabilityFeature.body}
                 </p>
                 <Button href="/sustainability" variant="outline-light" className="mt-7">
