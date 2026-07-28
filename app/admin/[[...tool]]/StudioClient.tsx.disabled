@@ -1,0 +1,16 @@
+"use client";
+
+// This file exists specifically to fix a known next-sanity + Next.js App
+// Router bug (sanity-io/next-sanity#2201): if the page.tsx that renders
+// <NextStudio> is a Server Component, Next.js bundles sanity.config.ts (and
+// everything it imports — sanity, sanity/structure, @sanity/vision) into the
+// server/RSC layer, where React's createContext isn't available, crashing
+// the build with "TypeError: (0 , r.createContext) is not a function"
+// during "Collecting page data". Marking *this* file "use client" ensures
+// Sanity's entire module graph is only ever bundled for the browser.
+import { NextStudio } from "next-sanity/studio";
+import config from "../../../sanity.config";
+
+export default function StudioClient() {
+  return <NextStudio config={config} />;
+}
