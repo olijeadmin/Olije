@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import Logo from "./Logo";
 
 export default function Footer({
   tagline = "An international energy, infrastructure and investment company headquartered in Lagos, Nigeria.",
@@ -13,7 +13,14 @@ export default function Footer({
       <div className="container-wrap">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 pb-14 border-b border-ivory/10">
           <div className="col-span-2 md:col-span-1">
-            <Logo wordmarkColor="#F7F3EA" size={38} />
+            <Image
+              src="/footer-logo.jpg"
+              alt="OLIJE"
+              width={57}
+              height={57}
+              className="shrink-0 object-contain bg-transparent"
+              style={{ width: 57, height: "auto", backgroundColor: "transparent" }}
+            />
             <p className="text-sm leading-relaxed mt-4 max-w-[280px] text-ivory/55">{tagline}</p>
           </div>
 
