@@ -130,8 +130,8 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- EXECUTIVE INTRO ---------------- */}
-      <section className="py-28 md:py-32">
-        <div className="container-wrap grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-16 items-start">
+      <section className="py-20 md:py-24">
+        <div className="container-wrap grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-14 items-start">
           <Reveal>
             <div className="text-[0.72rem] tracking-[0.22em] uppercase font-semibold text-gold mb-4">{home.introEyebrow}</div>
             <p className="font-serif text-[1.7rem] md:text-[1.9rem] leading-[1.4] text-navy font-medium">{home.introLede}</p>
@@ -152,21 +152,19 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- SERVICES GRID ---------------- */}
-      <section className="py-28 md:py-32 bg-ivory">
+      <section className="py-20 md:py-24 bg-ivory">
         <div className="container-wrap">
-          <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
-            <Reveal>
-              <h2 className="font-serif text-[2rem] md:text-[2.6rem] max-w-[14ch] text-navy">
+          <Reveal>
+            <div className="text-center mb-16">
+              <div className="text-[0.75rem] tracking-[0.22em] uppercase font-semibold text-gold mb-4">Operational Excellence</div>
+              <h2 className="font-serif text-[2.2rem] md:text-[3rem] font-bold text-goldLight max-w-[20ch] mx-auto leading-[1.2]">
                 Core capabilities, under one standard
               </h2>
-            </Reveal>
-            <Reveal>
-              <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
-                Nine service lines spanning trading, logistics, consulting and real assets — each
-                run to the same operational discipline.
+              <p className="text-[#4c5a6b] max-w-[560px] text-[0.95rem] leading-[1.65] mt-6 mx-auto">
+                Nine service lines spanning trading, logistics, consulting and real assets — each run to the same operational discipline.
               </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
           <Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((s, i) => {
@@ -203,26 +201,30 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- WHY CHOOSE US ---------------- */}
-      <section className="py-28 md:py-32">
+      <section className="py-20 md:py-24 bg-[linear-gradient(135deg,rgba(247,243,234,0.4)_0%,rgba(217,178,124,0.08)_100%)]">
         <div className="container-wrap">
-          <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
-            <Reveal>
-              <h2 className="font-serif text-[2rem] md:text-[2.6rem] text-navy max-w-[14ch]">
+          <Reveal>
+            <div className="text-center mb-16">
+              <div className="text-[0.75rem] tracking-[0.22em] uppercase font-semibold text-gold mb-4">Our Promise</div>
+              <h2 className="font-serif text-[2.2rem] md:text-[3rem] font-bold text-navy max-w-[22ch] mx-auto leading-[1.2]">
                 Why partners choose OLIJE
               </h2>
-            </Reveal>
-            <Reveal>
-              <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
+              <p className="text-[#4c5a6b] max-w-[560px] text-[0.95rem] leading-[1.65] mt-6 mx-auto">
                 The principles that hold across every trade, terminal and transaction.
               </p>
-            </Reveal>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-11 gap-y-12">
-            {whyUs.map((item) => (
+            </div>
+          </Reveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {whyUs.map((item, idx) => (
               <Reveal key={item.title}>
-                <div className="pt-6 border-t border-[rgba(177,118,63,0.28)]">
-                  <h3 className="text-[1.15rem] font-semibold text-navy mb-2">{item.title}</h3>
-                  <p className="text-[0.88rem] leading-[1.65] text-[#4c5a6b]">{item.desc}</p>
+                <div className="bg-white/55 backdrop-blur-sm rounded-[20px] p-8 border border-[rgba(177,118,63,0.2)] hover:border-gold hover:bg-white/75 transition-all duration-300 shadow-[0_8px_32px_rgba(16,42,67,0.06)] hover:shadow-[0_16px_48px_rgba(177,118,63,0.12)]">
+                  <div className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold font-serif font-bold text-[0.95rem]">{String(idx + 1).padStart(2, "0")}</span>
+                    <div>
+                      <h3 className="text-[1.15rem] font-serif font-semibold text-navy mb-2.5">{item.title}</h3>
+                      <p className="text-[0.88rem] leading-[1.7] text-[#4c5a6b]">{item.desc}</p>
+                    </div>
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -231,8 +233,8 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- GLOBAL OPS ---------------- */}
-      <section className="py-28 md:py-32 bg-navyDeep text-ivory">
-        <div className="container-wrap grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-20 md:py-24 bg-navyDeep text-ivory">
+        <div className="container-wrap grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <Reveal>
             <div className="text-[0.72rem] tracking-[0.22em] uppercase font-semibold text-goldLight mb-4">
               Global Operations
@@ -283,21 +285,18 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- STANDARDS ---------------- */}
-      <section className="py-28 md:py-32">
+      <section className="py-20 md:py-24">
         <div className="container-wrap">
-          <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
-            <Reveal>
-              <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy max-w-[16ch]">
+          <Reveal>
+            <div className="text-center mb-14">
+              <h2 className="font-serif text-[2rem] md:text-[2.8rem] font-bold text-navy max-w-[18ch] mx-auto">
                 Standards &amp; compliance
               </h2>
-            </Reveal>
-            <Reveal>
-              <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
-                Governance, quality and HSE frameworks applied without exception across every
-                jurisdiction.
+              <p className="text-[#4c5a6b] max-w-[560px] text-[0.95rem] leading-[1.65] mt-4 mx-auto">
+                Governance, quality and HSE frameworks applied without exception across every jurisdiction.
               </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
           <Reveal>
             <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-l border-[rgba(177,118,63,0.28)]">
               {[
@@ -318,7 +317,7 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- SUSTAINABILITY FEATURE ---------------- */}
-      <section className="py-28 md:py-32">
+      <section className="py-20 md:py-24">
         <div className="container-wrap">
           <Reveal>
             <div
@@ -365,18 +364,16 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------- NEWSROOM PREVIEW ---------------- */}
-      <section className="py-28 md:py-32">
+      <section className="py-20 md:py-24">
         <div className="container-wrap">
-          <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
-            <Reveal>
-              <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy">From the newsroom</h2>
-            </Reveal>
-            <Reveal>
-              <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
+          <Reveal>
+            <div className="text-center mb-14">
+              <h2 className="font-serif text-[2rem] md:text-[2.8rem] font-bold text-navy">From the newsroom</h2>
+              <p className="text-[#4c5a6b] max-w-[560px] text-[0.95rem] leading-[1.65] mt-4 mx-auto">
                 Company updates, project milestones and industry insight.
               </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
             {news.slice(0, 3).map((n) => (
               <Reveal key={n.title}>
