@@ -27,7 +27,11 @@ export default function Logo({ size = 34, showWordmark = true, wordmarkColor = "
       {showWordmark && (
         <span
           className="font-serif font-bold tracking-[0.16em] whitespace-nowrap"
-          style={{ color: wordmarkColor, fontSize: size * 0.62 }}
+          style={{
+            color: wordmarkColor,
+            fontSize: size * 0.62,
+            fontFamily: "var(--font-display), serif",
+          }}
         >
           OLIJE
         </span>
