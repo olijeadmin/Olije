@@ -14,7 +14,7 @@ export default function Footer({
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 pb-14 border-b border-ivory/10">
           <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
             <div className="inline-flex items-center gap-3">
-              <Logo src="/footer-logo.jpg" size={32} showWordmark={false} />
+              <Logo src="/logo.png" size={32} showWordmark={true} wordmarkColor="#FFFFFF" wordmarkFont="var(--font-body), sans-serif" imageFilter="brightness(0) invert(1)" />
             </div>
             <p className="text-sm leading-relaxed max-w-[280px] text-ivory/55">{tagline}</p>
           </div>
