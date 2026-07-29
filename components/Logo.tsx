@@ -2,21 +2,24 @@ import Image from "next/image";
 
 type LogoProps = {
   size?: number;
+  src?: string;
   showWordmark?: boolean;
   wordmarkColor?: string;
 };
 
-// Uses the actual official OLIJE logo file (public/logo.png) — a
-// transparent PNG processed from the brand's source artwork. On light
-// backgrounds it shows the full navy circle + gold swirl mark; on the navy
-// footer, the navy circle blends into the background leaving a distinctive
-// gold emblem — both read correctly with this single asset, no separate
-// light/dark file needed.
-export default function Logo({ size = 34, showWordmark = true, wordmarkColor = "#102A43" }: LogoProps) {
+// Uses the actual official OLIJE logo file (public/logo.png) by default.
+// A custom source can be provided for alternate logo variants, such as the
+// white footer logo asset.
+export default function Logo({
+  size = 34,
+  src = "/logo.png",
+  showWordmark = true,
+  wordmarkColor = "#102A43",
+}: LogoProps) {
   return (
     <span className="flex items-center gap-2.5 min-w-0">
       <Image
-        src="/logo.png"
+        src={src}
         alt="OLIJE"
         width={size * 1.5}
         height={size * 1.5 * (591 / 600)}
