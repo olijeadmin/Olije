@@ -6,6 +6,7 @@ type LogoProps = {
   showWordmark?: boolean;
   wordmarkColor?: string;
   wordmarkFont?: string;
+  imageFilter?: string;
 };
 
 // Uses the actual official OLIJE logo file (public/logo.png) by default.
@@ -17,6 +18,7 @@ export default function Logo({
   showWordmark = true,
   wordmarkColor = "#102A43",
   wordmarkFont = "var(--font-display), serif",
+  imageFilter,
 }: LogoProps) {
   return (
     <span className="flex items-center gap-2.5 min-w-0">
@@ -26,7 +28,7 @@ export default function Logo({
         width={size * 1.5}
         height={size * 1.5 * (591 / 600)}
         className="shrink-0 object-contain"
-        style={{ width: size * 1.5, height: "auto" }}
+        style={{ width: size * 1.5, height: "auto", ...(imageFilter ? { filter: imageFilter } : {}) }}
         priority
       />
       {showWordmark && (
