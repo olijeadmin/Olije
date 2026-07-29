@@ -5,6 +5,7 @@ type LogoProps = {
   src?: string;
   showWordmark?: boolean;
   wordmarkColor?: string;
+  wordmarkFont?: string;
 };
 
 // Uses the actual official OLIJE logo file (public/logo.png) by default.
@@ -15,6 +16,7 @@ export default function Logo({
   src = "/logo.png",
   showWordmark = true,
   wordmarkColor = "#102A43",
+  wordmarkFont = "var(--font-display), serif",
 }: LogoProps) {
   return (
     <span className="flex items-center gap-2.5 min-w-0">
@@ -28,14 +30,7 @@ export default function Logo({
         priority
       />
       {showWordmark && (
-        <span
-          className="font-serif font-bold tracking-[0.16em] whitespace-nowrap"
-          style={{
-            color: wordmarkColor,
-            fontSize: size * 0.62,
-            fontFamily: "var(--font-display), serif",
-          }}
-        >
+        <span className="font-serif font-bold tracking-[0.16em] whitespace-nowrap" style={{ color: wordmarkColor, fontSize: size * 0.62, fontFamily: wordmarkFont }}>
           OLIJE
         </span>
       )}

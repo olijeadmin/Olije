@@ -47,8 +47,8 @@ export default function Header() {
         }`}
       >
         <div className="container-wrap flex items-center justify-between gap-8">
-          <Link href="/" className="shrink-0" aria-label="OLIJE home">
-            <Logo wordmarkColor="#102A43" size={32} />
+            <Link href="/" className="shrink-0" aria-label="OLIJE home">
+            <Logo wordmarkColor="#102A43" size={32} wordmarkFont="var(--font-body), sans-serif" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1" aria-label="Primary">
@@ -99,7 +99,7 @@ export default function Header() {
         aria-modal="true"
       >
         <div className="container-wrap flex items-center justify-between py-5 border-b border-[rgba(177,118,63,0.28)]">
-          <Logo wordmarkColor="#102A43" size={30} />
+          <Logo wordmarkColor="#102A43" size={30} wordmarkFont="var(--font-body), sans-serif" />
           <button
             aria-label="Close menu"
             className="text-navy text-2xl leading-none p-2 -mr-2"
