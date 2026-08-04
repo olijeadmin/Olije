@@ -3,6 +3,7 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
 import HeroSlider from "@/components/HeroSlider";
+import DnsDemoBanner from "@/components/DnsDemoBanner";
 import { getHome, getServices, getNews, getSiteSettings } from "@/lib/content";
 import { urlFor } from "@/sanity/lib/image";
 
@@ -48,6 +49,9 @@ export default async function HomePage() {
     <>
       {/* ---------------- HERO ---------------- */}
       <section className="relative min-h-[100svh] flex items-end overflow-hidden bg-navyDeep">
+        <div className="absolute inset-x-0 top-0 z-20">
+          <DnsDemoBanner />
+        </div>
         {/* Full-bleed photography. Once a photo's uploaded in /admin →
             Home Page → "Hero background photo", that single image is used.
             Until then, a slider of default licensed photography (Unsplash
