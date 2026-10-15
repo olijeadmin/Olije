@@ -140,9 +140,24 @@ const fallbackTeam: TeamItem[] = [
     desc: "Leads commercial expansion, joint ventures, stakeholder relationships and strategic partnerships across key markets.",
     photo: "/images/leadership/igut-edward-manager.jpg",
   },
-  { role: "Chief Trading Officer", desc: "Directs crude, product and gas trading operations." },
-  { role: "Head of Infrastructure & Real Estate", desc: "Leads development of terminals, facilities and property assets." },
-  { role: "Head of Sustainability & HSE", desc: "Sets environmental, safety and governance standards group-wide." },
+  {
+    name: "Aniekwe Judith Esq",
+    role: "Head of Legal & Corporate Compliance",
+    desc: "Steers legal governance, regulatory compliance, contract structuring and statutory oversight across all business operations.",
+    photo: "/images/leadership/aniekwe-judith-legal.jpg",
+  },
+  {
+    name: "Ojele Oluwasegun",
+    role: "Head of Information Technology & Cybersecurity",
+    desc: "Directs enterprise technology architecture, digital infrastructure resilience, cybersecurity frameworks and systems innovation.",
+    photo: "/images/leadership/ojele-oluwasegun-it.jpg",
+  },
+  {
+    name: "Peter Morins",
+    role: "Head of Operations & Field Coordination",
+    desc: "Manages terminal operations, field logistics, multi-site coordination and asset execution with high safety standards.",
+    photo: "/images/leadership/peter-morins-ops.jpg",
+  },
 ];
 
 export function getTeam() {
