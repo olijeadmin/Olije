@@ -135,10 +135,10 @@ const fallbackTeam: TeamItem[] = [
     photo: "/images/leadership/igut-edward-manager.jpg",
   },
   {
-    name: "Aniekwe Judith Esq",
-    role: "Head of Legal & Corporate Compliance",
-    desc: "Oversees legal affairs, reviews and drafts agreements, advises on legal risks and coordinates corporate compliance. Ensures required legal documentation and contractual obligations receive appropriate attention.",
-    photo: "/images/leadership/aniekwe-judith-legal.jpg",
+    name: "Oladiran Kayode",
+    role: "Head of Corporate Communications & Business Support",
+    desc: "Coordinates company updates, social media content and approved investor communications. Oversees business documentation and information flow to ensure accurate, timely and professional communication.",
+    photo: "/images/leadership/oladiran-kayode-officer.jpg",
   },
   {
     name: "Ojele Olusegun",
@@ -147,10 +147,10 @@ const fallbackTeam: TeamItem[] = [
     photo: "/images/leadership/ojele-oluwasegun-it.jpg",
   },
   {
-    name: "Oladiran Kayode",
-    role: "Head of Corporate Communications & Business Support",
-    desc: "Coordinates company updates, social media content and approved investor communications. Oversees business documentation and information flow to ensure accurate, timely and professional communication.",
-    photo: "/images/leadership/oladiran-kayode-officer.jpg",
+    name: "Aniekwe Judith Esq",
+    role: "Head of Legal & Corporate Compliance",
+    desc: "Oversees legal affairs, reviews and drafts agreements, advises on legal risks and coordinates corporate compliance. Ensures required legal documentation and contractual obligations receive appropriate attention.",
+    photo: "/images/leadership/aniekwe-judith-legal.jpg",
   },
   {
     name: "Peter Morins",
