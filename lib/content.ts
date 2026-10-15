@@ -119,12 +119,27 @@ export function getNews() {
 }
 
 // ---------------- Leadership team ----------------
-export type TeamItem = { role: string; desc: string; name?: string; photo?: SanityImage | null };
+export type TeamItem = { role: string; desc: string; name?: string; photo?: SanityImage | string | null };
 
 const fallbackTeam: TeamItem[] = [
-  { role: "Group Chief Executive Officer", desc: "Sets strategic direction across trading, infrastructure and investment." },
-  { role: "Chief Operating Officer", desc: "Oversees operational execution across all business lines." },
-  { role: "Chief Financial Officer", desc: "Leads capital strategy, treasury and financial governance." },
+  {
+    name: "Olije Fidelis",
+    role: "Managing Director",
+    desc: "Sets strategic direction, executive governance and commercial vision across energy trading, infrastructure and investments.",
+    photo: "/images/leadership/olije-fidelis-md.jpg",
+  },
+  {
+    name: "Oladiran Kayode",
+    role: "Business Support & Documentation Officer",
+    desc: "Oversees corporate documentation, trade operations compliance, and operational governance across business units.",
+    photo: "/images/leadership/oladiran-kayode-officer.jpg",
+  },
+  {
+    name: "Igut Edward",
+    role: "Business Development & Partnerships Manager",
+    desc: "Leads commercial expansion, joint ventures, stakeholder relationships and strategic partnerships across key markets.",
+    photo: "/images/leadership/igut-edward-manager.jpg",
+  },
   { role: "Chief Trading Officer", desc: "Directs crude, product and gas trading operations." },
   { role: "Head of Infrastructure & Real Estate", desc: "Leads development of terminals, facilities and property assets." },
   { role: "Head of Sustainability & HSE", desc: "Sets environmental, safety and governance standards group-wide." },

@@ -52,7 +52,7 @@ export default async function LeadershipPage() {
                   <div className="relative aspect-[4/5] w-full overflow-hidden bg-navy">
                     {b.photo ? (
                       <Image
-                        src={urlFor(b.photo).width(640).height(800).fit("crop").url()}
+                        src={typeof b.photo === "string" ? b.photo : urlFor(b.photo).width(640).height(800).fit("crop").url()}
                         alt={b.name || b.role}
                         fill
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -61,7 +61,7 @@ export default async function LeadershipPage() {
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-navy to-navyDeep">
                         <span className="font-serif text-[3.4rem] text-goldLight/80 font-semibold">
-                          {initials(b.role)}
+                          {initials(b.name || b.role)}
                         </span>
                       </div>
                     )}
