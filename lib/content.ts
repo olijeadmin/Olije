@@ -187,18 +187,20 @@ export function getJobs() {
 }
 
 // ---------------- Offices ----------------
-export type OfficeItem = { name: string; country: string; phone: string };
+export type OfficeItem = { name: string; country?: string; address?: string; phone: string };
 
 const fallbackOffices: OfficeItem[] = [
-  { name: "Lagos HQ", country: "Nigeria", phone: "+234 1 000 0000" },
-  { name: "Rotterdam", country: "Netherlands", phone: "+31 10 000 0000" },
-  { name: "Singapore", country: "Singapore", phone: "+65 6000 0000" },
-  { name: "Dubai", country: "United Arab Emirates", phone: "+971 4 000 0000" },
+  {
+    name: "Lagos HQ",
+    address: "ROAD 4, CLOSE 3, WESTEND ESTATE,\nLEKKI COUNTY, LAGOS STATE, NIGERIA",
+    country: "Nigeria",
+    phone: "+2348032894304",
+  },
 ];
 
 export function getOffices() {
   return safeFetch<OfficeItem[]>(
-    `*[_type == "officeLocation"] | order(order asc){name, country, phone}`,
+    `*[_type == "officeLocation"] | order(order asc){name, country, address, phone}`,
     fallbackOffices
   );
 }

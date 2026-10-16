@@ -6,6 +6,7 @@ export default defineType({
   type: "document",
   fields: [
     defineField({ name: "name", title: "Office name (e.g. Lagos HQ)", type: "string", validation: (Rule) => Rule.required() }),
+    defineField({ name: "address", title: "Address", type: "text" }),
     defineField({ name: "country", title: "Country", type: "string" }),
     defineField({ name: "phone", title: "Phone", type: "string" }),
     defineField({ name: "isHeadquarters", title: "This is the headquarters", type: "boolean", initialValue: false }),

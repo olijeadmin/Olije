@@ -20,22 +20,40 @@ export default async function ContactPage() {
         <div className="container-wrap">
           <Reveal>
             <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
-              <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy">Our offices</h2>
+              <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy">
+                {offices.length > 1 ? "Our offices" : "Our office"}
+              </h2>
               <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
-                Headquartered in Lagos, with desks connecting global trading corridors.
+                {offices.length > 1
+                  ? "Headquartered in Lagos, with desks connecting global trading corridors."
+                  : "Headquartered in Lagos, Nigeria."}
               </p>
             </div>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            {offices.map(({ name, country, phone }) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {offices.map(({ name, country, address, phone }) => (
               <Reveal key={name}>
                 <div className="pt-6 border-t border-[rgba(177,118,63,0.28)]">
                   <h3 className="text-[1.1rem] font-semibold text-navy">{name}</h3>
-                  <p className="text-[0.88rem] text-[#4c5a6b] leading-[1.7] mt-2">
-                    {country}
-                    <br />
-                    {phone}
-                  </p>
+                  <div className="text-[0.88rem] text-[#4c5a6b] leading-[1.7] mt-3 space-y-2">
+                    {address ? (
+                      <p className="whitespace-pre-line text-[#2c3846]">
+                        {address}
+                      </p>
+                    ) : (
+                      country && <p>{country}</p>
+                    )}
+                    {phone && (
+                      <p>
+                        <a
+                          href={`tel:${phone.replace(/\s+/g, "")}`}
+                          className="hover:text-gold transition-colors font-medium text-navy"
+                        >
+                          {phone}
+                        </a>
+                      </p>
+                    )}
+                  </div>
                 </div>
               </Reveal>
             ))}
