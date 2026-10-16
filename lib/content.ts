@@ -213,7 +213,7 @@ export type SiteSettings = {
 };
 
 const fallbackSettings: SiteSettings = {
-  contactEmail: "info@olije.com",
+  contactEmail: "fidelisolije@olije.com",
   footerTagline: "An international energy, infrastructure and investment company headquartered in Lagos, Nigeria.",
   sustainabilityFeature: {
     heading: "Growth measured by what it leaves behind",

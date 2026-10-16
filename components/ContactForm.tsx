@@ -43,14 +43,8 @@ export default function ContactForm() {
           <input name="email" type="email" required className={inputClass} />
         </div>
         <div className="flex flex-col gap-2">
-          <label className={labelClass}>Enquiry Type</label>
-          <select name="enquiryType" className={inputClass}>
-            <option>Partnership Enquiry</option>
-            <option>Service Enquiry</option>
-            <option>Press Enquiry</option>
-            <option>Careers</option>
-            <option>Other</option>
-          </select>
+          <label className={labelClass}>Phone Number</label>
+          <input name="phone" type="tel" required className={inputClass} placeholder="+234 800 000 0000" />
         </div>
         <div className="sm:col-span-2 flex flex-col gap-2">
           <label className={labelClass}>Message</label>
@@ -66,7 +60,7 @@ export default function ContactForm() {
       </button>
       {status === "sent" && <p className="mt-4 text-[0.85rem] text-goldLight">Thank you — a member of our team will respond shortly.</p>}
       {status === "error" && (
-        <p className="mt-4 text-[0.85rem] text-red-300">Something went wrong — please email us directly at info@olije.com.</p>
+        <p className="mt-4 text-[0.85rem] text-red-300">Something went wrong — please email us directly at fidelisolije@olije.com.</p>
       )}
     </form>
   );
