@@ -97,7 +97,7 @@ export default function SustainabilityPage() {
                 <h2 className="font-serif text-[1.9rem] text-navy mb-4">Health, Safety &amp; Wellbeing</h2>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch]">
                   A zero-harm standard governs every site and vessel we operate on. HSE performance
-                  is tracked continuously and reported to the executive board.
+                  is tracked continuously and reported to the leadership team.
                 </p>
               </div>
             </Reveal>

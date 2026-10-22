@@ -93,7 +93,7 @@ export default function AboutPage() {
               <div id="leadership" className="scroll-mt-32">
                 <h2 className="font-serif text-[1.9rem] text-navy mb-4">Leadership</h2>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch] mb-6">
-                  OLIJE is led by an executive team with deep experience across energy trading,
+                  OLIJE is led by a leadership team with deep experience across energy trading,
                   infrastructure development and capital markets. Explore the full board on our
                   Leadership page.
                 </p>

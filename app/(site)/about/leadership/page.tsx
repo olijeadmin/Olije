@@ -23,14 +23,14 @@ export default async function LeadershipPage() {
       <PageHero
         eyebrow="Leadership"
         title="Stewardship with purpose"
-        sub="An executive team bringing deep operating experience across energy trading, infrastructure and capital markets."
+        sub="A leadership team bringing deep operating experience across energy trading, infrastructure and capital markets."
         crumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }, { label: "Leadership" }]}
       />
       <section className="py-24 md:py-28">
         <div className="container-wrap">
           <Reveal>
             <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
-              <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy">Executive Board</h2>
+              <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy">Leadership Team</h2>
               <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
                 A leadership team accountable for discipline, integrity and long-term performance
                 across every OLIJE business line.
@@ -70,7 +70,7 @@ export default async function LeadershipPage() {
                   <div className="pt-6">
                     <h3 className="text-[1.15rem] font-semibold text-navy">{b.name || b.role}</h3>
                     <div className="text-[0.78rem] text-gold tracking-[0.04em] uppercase font-semibold mt-1">
-                      {b.name ? b.role : "Executive Board"}
+                      {b.name ? b.role : "Leadership Team"}
                     </div>
                     <p className="text-[0.86rem] text-[#4c5a6b] leading-[1.6] mt-3">{b.desc}</p>
                   </div>
