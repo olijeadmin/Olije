@@ -60,7 +60,7 @@ export default function ContactForm() {
       </button>
       {status === "sent" && <p className="mt-4 text-[0.85rem] text-goldLight">Thank you — a member of our team will respond shortly.</p>}
       {status === "error" && (
-        <p className="mt-4 text-[0.85rem] text-red-300">Something went wrong — please email us directly at fidelisolije@olije.com.</p>
+        <p className="mt-4 text-[0.85rem] text-red-300">Something went wrong — please email us directly at info@olije.com.</p>
       )}
     </form>
   );

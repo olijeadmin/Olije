@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer({
   tagline = "An international energy, infrastructure and investment company headquartered in Lagos, Nigeria.",
-  contactEmail = "fidelisolije@olije.com",
+  contactEmail = "info@olije.com",
 }: {
   tagline?: string;
   contactEmail?: string;

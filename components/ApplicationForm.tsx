@@ -57,7 +57,7 @@ export default function ApplicationForm() {
       </button>
       {status === "sent" && <p className="mt-4 text-[0.85rem] text-gold">Thank you — your application has been received.</p>}
       {status === "error" && (
-        <p className="mt-4 text-[0.85rem] text-red-600">Something went wrong — please email us directly at fidelisolije@olije.com.</p>
+        <p className="mt-4 text-[0.85rem] text-red-600">Something went wrong — please email us directly at info@olije.com.</p>
       )}
     </form>
   );

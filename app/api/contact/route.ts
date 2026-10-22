@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const RECIPIENT_EMAIL = process.env.CONTACT_FORM_RECIPIENT || "fidelisolije@olije.com";
+const RECIPIENT_EMAIL = process.env.CONTACT_FORM_RECIPIENT || "info@olije.com";
 
 export async function POST(request: Request) {
   let body: Record<string, unknown>;
