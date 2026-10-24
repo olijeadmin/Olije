@@ -47,17 +47,17 @@ const fallbackHome: HomeContent = {
   heroSubtext:
     "OLIJE develops, trades and invests across energy, infrastructure and real assets — connecting Nigeria to global markets through disciplined execution and long-term partnership.",
   stats: [
-    { value: "9", label: "Core Service Lines" },
-    { value: "8", label: "Industries Served" },
-    { value: "20+", label: "Trading Corridors" },
-    { value: "1", label: "Standard, Everywhere" },
+    { value: "Nigeria", label: "Based" },
+    { value: "Global", label: "Outlook" },
+    { value: "Strategic", label: "Partnerships" },
+    { value: "Long-Term", label: "Value" },
   ],
   introEyebrow: "Who We Are",
   introLede:
-    "OLIJE is an international energy, infrastructure and investment company — built to move essential resources and capital with integrity, from origin to destination.",
+    "OLIJE is a Nigeria-based energy, infrastructure and investment company with an international outlook — focused on connecting opportunities, resources and strategic partnerships to create lasting value.",
   introBody: [
-    "We trade crude oil and refined products, move LNG and gas, operate marine logistics, and develop infrastructure and real estate — anchored by a Nigeria headquarters and extended through a global network of partners, counterparties and terminals.",
-    "Every engagement is governed by the same standard: disciplined execution, transparent counterparty relationships, and a long-term view of the markets and communities we operate in.",
+    "Our business interests span crude oil and refined petroleum products, natural gas, marine logistics, infrastructure, real estate and strategic investments. We pursue opportunities across these sectors through responsible business development, procurement, commercial coordination and qualified partnerships.",
+    "Our approach is grounded in integrity, disciplined execution, transparent relationships and a long-term commitment to sustainable growth. From our base in Nigeria, we are building the capabilities and international connections to deliver meaningful value across industries and markets.",
   ],
 };
 

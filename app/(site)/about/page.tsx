@@ -45,15 +45,21 @@ export default function AboutPage() {
               <div id="story" className="scroll-mt-32">
                 <h2 className="font-serif text-[1.9rem] text-navy mb-4">Company Story</h2>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch] mb-3.5">
-                  OLIJE was founded to connect Nigeria&apos;s energy and infrastructure sector to
-                  global markets through disciplined trading, reliable logistics and long-term
-                  investment. What began as a crude oil trading desk has grown into an integrated
-                  platform spanning energy, infrastructure and real assets.
+                  OLIJE Industries Limited was established in Nigeria in 2026 with a clear ambition:
+                  to build an enduring enterprise connecting opportunities across energy,
+                  infrastructure, logistics, real estate and strategic investments.
+                </p>
+                <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch] mb-3.5">
+                  With interests spanning crude oil, refined petroleum products, natural gas and
+                  related industries, OLIJE is developing the capabilities, commercial relationships
+                  and strategic partnerships necessary to pursue opportunities across domestic and
+                  international markets.
                 </p>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch]">
-                  Today, OLIJE operates across trading, marine logistics, infrastructure
-                  development and real estate — applying the same operating standard to every
-                  business line, regardless of scale or geography.
+                  Our foundation is built on integrity, disciplined execution and a long-term
+                  commitment to responsible business development. As we grow, our focus remains on
+                  creating meaningful value, strengthening partnerships and building a company
+                  positioned to contribute to the industries and markets we serve.
                 </p>
               </div>
             </Reveal>
@@ -62,9 +68,9 @@ export default function AboutPage() {
               <div id="mission" className="scroll-mt-32">
                 <h2 className="font-serif text-[1.9rem] text-navy mb-4">Mission &amp; Vision</h2>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch] mb-3.5">
-                  <strong>Mission —</strong> To deliver integrated energy, infrastructure and
-                  investment solutions that meet the highest standards of integrity, safety and
-                  performance.
+                  <strong>Mission —</strong> To develop and deliver responsible energy,
+                  infrastructure and investment solutions through strategic partnerships,
+                  disciplined execution and a commitment to integrity, safety and performance.
                 </p>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch]">
                   <strong>Vision —</strong> To build one of the world&apos;s most respected energy,

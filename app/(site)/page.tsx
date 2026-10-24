@@ -116,11 +116,13 @@ export default async function HomePage() {
           as a distinct, attention-grabbing beat rather than blending in. */}
       <section className="bg-gold py-10 sm:py-12">
         <div className="container-wrap">
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-ivory/25">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-4 text-center">
             {home.stats.map((s) => (
-              <div key={s.label} className="px-4 sm:px-6 first:pl-0 text-center sm:text-left">
-                <div className="font-serif text-[1.9rem] sm:text-[2.3rem] text-ivory font-bold leading-none">{s.value}</div>
-                <div className="text-[0.66rem] sm:text-[0.72rem] tracking-[0.08em] uppercase text-ivory/85 font-semibold mt-2">
+              <div key={s.label} className="px-2 sm:px-4">
+                <div className="text-[1.45rem] sm:text-[1.75rem] md:text-[2.1rem] text-ivory font-bold leading-tight">
+                  {s.value}
+                </div>
+                <div className="text-[0.66rem] sm:text-[0.72rem] tracking-[0.14em] uppercase text-ivory/85 font-semibold mt-1.5 sm:mt-2">
                   {s.label}
                 </div>
               </div>
@@ -232,31 +234,35 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ---------------- GLOBAL OPS ---------------- */}
+      {/* ---------------- INTERNATIONAL OUTLOOK ---------------- */}
       <section className="py-20 md:py-24 bg-navyDeep text-ivory">
         <div className="container-wrap grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <Reveal>
             <div className="text-[0.72rem] tracking-[0.22em] uppercase font-semibold text-goldLight mb-4">
-              Global Operations
+              International Outlook
             </div>
             <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-ivory">
-              A Nigeria headquarters, a global reach
+              Rooted in Nigeria. Connected to global opportunities.
             </h2>
-            <p className="text-ivory/68 text-[0.98rem] leading-[1.75] mt-5 max-w-[460px]">
-              From our Lagos headquarters, OLIJE coordinates trading desks, marine logistics and
-              infrastructure delivery across key corridors — connecting West African supply with
-              international demand.
+            <p className="text-ivory/68 text-[0.98rem] leading-[1.75] mt-5 max-w-[520px]">
+              From Nigeria, OLIJE identifies and develops commercial opportunities across energy,
+              infrastructure, procurement, logistics and strategic investments. We engage international
+              markets through disciplined business development, qualified partnerships and a commitment
+              to long-term value creation.
             </p>
             <div className="mt-9 flex flex-col">
               {[
-                ["Lagos ⇌ Rotterdam", "Crude & Products"],
-                ["Lagos ⇌ Singapore", "Trading Desk"],
-                ["Lagos ⇌ Houston", "Procurement"],
-                ["Lagos ⇌ Dubai", "Capital & Ventures"],
-              ].map(([route, tag]) => (
-                <div key={route} className="flex justify-between py-4 border-t border-ivory/10 last:border-b text-[0.88rem]">
-                  <span className="font-medium">{route}</span>
-                  <span className="text-goldLight tracking-wide">{tag}</span>
+                ["Energy & Resources", "Trade and supply opportunities"],
+                ["Infrastructure", "Project development and partnerships"],
+                ["Procurement & Logistics", "Sourcing and commercial coordination"],
+                ["Investments & Real Assets", "Strategic opportunity development"],
+              ].map(([sector, focus]) => (
+                <div
+                  key={sector}
+                  className="flex flex-col sm:flex-row sm:items-center justify-between py-4 border-t border-ivory/10 last:border-b text-[0.88rem] gap-1 sm:gap-4"
+                >
+                  <span className="font-medium text-ivory">{sector}</span>
+                  <span className="text-goldLight tracking-wide sm:text-right">{focus}</span>
                 </div>
               ))}
             </div>
@@ -272,8 +278,8 @@ export default async function HomePage() {
             >
               <span className="absolute left-[30%] top-[42%] w-3.5 h-3.5 -ml-1.5 -mt-1.5 rounded-full bg-[rgba(177,118,63,0.5)]" />
               <span className="absolute left-[30%] top-[42%] w-3.5 h-3.5 -ml-1.5 -mt-1.5 rounded-full border border-goldLight animate-pulseRing" />
-              <span className="absolute left-[calc(30%+14px)] top-[calc(42%-8px)] text-[0.72rem] tracking-[0.1em] uppercase text-goldLight">
-                Lagos HQ
+              <span className="absolute left-[calc(30%+14px)] top-[calc(42%-8px)] text-[0.72rem] tracking-[0.1em] uppercase text-goldLight font-medium">
+                Nigeria HQ
               </span>
               <span className="absolute w-1.5 h-1.5 rounded-full bg-ivory/55" style={{ left: "62%", top: "22%" }} />
               <span className="absolute w-1.5 h-1.5 rounded-full bg-ivory/55" style={{ left: "80%", top: "48%" }} />
