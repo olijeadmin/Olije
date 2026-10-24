@@ -51,9 +51,9 @@ export default function AboutPage() {
                 </p>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch] mb-3.5">
                   With interests spanning crude oil, refined petroleum products, natural gas and
-                  related industries, OLIJE is developing the capabilities, commercial relationships
-                  and strategic partnerships necessary to pursue opportunities across domestic and
-                  international markets.
+                  related industries, OLIJE is developing capabilities in procurement, project
+                  management, commercial coordination and strategic partnerships to pursue
+                  opportunities across domestic and international markets.
                 </p>
                 <p className="text-[0.96rem] leading-[1.8] text-[#3c4a5c] max-w-[70ch]">
                   Our foundation is built on integrity, disciplined execution and a long-term
