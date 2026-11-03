@@ -21,7 +21,7 @@ export default async function ContactPage() {
           <Reveal>
             <div className="flex flex-wrap justify-between items-end gap-10 mb-14">
               <h2 className="font-serif text-[2rem] md:text-[2.5rem] text-navy">
-                {offices.length > 1 ? "Our offices" : "Our office"}
+                {offices.length > 1 ? "Our Regions" : "Our Region"}
               </h2>
               <p className="text-[#4c5a6b] max-w-[380px] text-[0.94rem] leading-[1.6]">
                 {offices.length > 1
