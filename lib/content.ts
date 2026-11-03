@@ -192,7 +192,7 @@ export type OfficeItem = { name: string; country?: string; address?: string; pho
 const fallbackOffices: OfficeItem[] = [
   {
     name: "Lagos HQ",
-    address: "ROAD 4, CLOSE 3, WESTEND ESTATE,\nLEKKI COUNTY, LAGOS STATE, NIGERIA",
+    address: "OLIJE INDUSTRIES LIMITED\nIncorporated in the Federal Republic of Nigeria",
     country: "Nigeria",
     phone: "+2348032894304",
   },
